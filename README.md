@@ -94,13 +94,15 @@
     background-repeat: no-repeat;
   }
   .rtl-text {
-  text-align: right;
   direction: rtl;
   font-family: 'Inter', sans-serif;
   color: #3b2f2f;
   padding: 1rem;
+  max-width: 700px;         /* Optional: controls line length */
+  margin: 0 auto;           /* Centers the block horizontally */
+  text-align: justify;      /* Creates balanced spacing across lines */
 }
-  </style>
+</style>
 </head>
 <body>
    <div class="banner"></div>
