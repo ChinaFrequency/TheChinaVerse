@@ -123,17 +123,19 @@
 }
 
 .nav-links {
-  list-style: none;
-  display: flex;
-  gap: 2rem;
-  margin: 0;
-  padding: 0;
+  display: none;
+  flex-direction: column;
+  background-color: #fffaf3;
+  padding: 1rem;
+  position: absolute;
+  top: 60px;
+  right: 0;
+  border: 1px solid #f4a261;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
 }
 
-.nav-links li a {
-  text-decoration: none;
-  color: #3b2f2f;
-  font-weight: 600;
+.nav-links.show {
+  display: flex;
 }
 
 .menu-toggle {
@@ -172,6 +174,17 @@
 
   .menu-toggle {
     display: block;
+    font-size: 2rem;
+    background: none;
+    border: none;
+    color: #3b2f2f;
+    cursor: pointer;
+  }
+}
+
+@media (min-width: 769px) {
+  .menu-toggle {
+    display: none;
   }
 }
   </style>
@@ -181,18 +194,15 @@
 <!-- Navigation -->
 <nav class="top-nav" role="navigation" aria-label="Main navigation">
   <div class="nav-container">
-    <ul class="nav-links">
-      <li><a href="Home.html">Home</a></li>
-      <li><a href="projects.html">Projects</a></li>
-      <li><a href="writing.html">Creative Writing</a></li>
-      <li><a href="contact.html">Contact</a></li>
-    </ul>
+    <div class="nav-brand">
+      <a href="Home.html">China</a>
+    </div>
 
-    <!-- Mobile Menu Icon -->
+    <!-- Toggle Button -->
     <button class="menu-toggle" onclick="toggleMenu()">☰</button>
 
-    <!-- Dropdown Menu -->
-    <ul class="dropdown" id="dropdownMenu">
+    <!-- Navigation Links -->
+    <ul class="nav-links" id="mainNav">
       <li><a href="Home.html">Home</a></li>
       <li><a href="projects.html">Projects</a></li>
       <li><a href="writing.html">Creative Writing</a></li>
@@ -252,12 +262,6 @@
       <img src="shareFromBeautyPlus (3).jpg" alt="Portrait of China in armchair with African masks">
     </div>
   </div>
-  <script>
-  function toggleMenu() {
-    const menu = document.getElementById('dropdownMenu');
-    menu.style.display = menu.style.display === 'flex' ? 'none' : 'flex';
-  }
-</script>
 <script>
   function toggleMenu() {
     const nav = document.getElementById('mainNav');
