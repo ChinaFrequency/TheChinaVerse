@@ -1,7 +1,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>TheChinaVerse Homepage</title>
+  <title> Homepage</title>
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500&family=Inter:wght@400;600&display=swap" rel="stylesheet">
   <style>
     body {
@@ -122,7 +122,7 @@
       </div>
 
       <div class="footer sparkle">
-        ✨ Let’s link up, level up, and light up the world.  
+         Let’s link up, level up, and light up the world.  
         <br>Need a reading? A fresh look? A custom site? A learning experience that actually lands? Or a poem that hits like a hug?  
         <br><strong>I got you.</strong>
       </div>
