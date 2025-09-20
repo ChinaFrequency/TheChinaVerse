@@ -183,12 +183,7 @@
 <nav class="top-nav" role="navigation" aria-label="Main navigation">
   <div class="nav-container">
     <ul class="nav-links">
-      <li><a href="Home.html">Home</a></li>
-      <li><a href="projects.html">Projects</a></li>
-      <li><a href="writing.html">Creative Writing</a></li>
-      <li><a href="contact.html">Contact</a></li>
-    </ul>
-
+      
     <!-- Toggle Button for Mobile -->
     <button class="menu-toggle" onclick="toggleMenu()">☰</button>
 
