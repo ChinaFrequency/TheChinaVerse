@@ -125,7 +125,7 @@
       </div>
 
       <div class="section">
-        And yes, I write. Like, <strong>really</strong> write. My poetry is raw, rhythmic, and rooted in truth. It’s healing, it’s heavy, it’s holy. There’s a whole tab for it—go ahead and catch a vibe.I also write short stories—snapshots of spirit, memory, and magic that speak to the heart and honor the journey.
+        And yes, I write. Like, <strong>really</strong> write. My poetry is raw, rhythmic, and rooted in truth. It’s healing, it’s heavy, it’s holy. There’s a whole tab for it—go ahead and catch a vibe. I also write short stories—snapshots of spirit, memory, and magic that speak to the heart and honor the journey.
       </div>
 
       <div class="section">
