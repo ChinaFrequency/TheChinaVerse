@@ -4,15 +4,15 @@
   <title> Homepage</title>
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500&family=Inter:wght@400;600&display=swap" rel="stylesheet">
   <style>
-    body {
-      margin: 0;
-      padding: 0;
-      font-family: 'Inter', sans-serif;
-      background: linear-gradient(to bottom right, #fcefee, #fff8f0);
-      color: #3b2f2f;
-      line-height: 1.6;
-    }
-
+   body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Inter', sans-serif;
+  background: url('linen-texture.jpg') repeat;
+  background-size: cover;
+  color: #3b2f2f;
+  line-height: 1.6;
+}
     .container {
       display: flex;
       flex-wrap: wrap;
