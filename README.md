@@ -85,19 +85,18 @@
         padding-right: 0;
       }
     }
-    .banner img {
-  width: 100%;
-  max-height: 250px; /* Adjust height as needed */
-  object-fit: cover;
-  display: block;
-  border-bottom: 4px solid #e07a5f; /* Terracotta accent */
-}
+    .banner {
+    width: 100%;
+    height: 300px;
+    background-image: url('realistic Afrocentri.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
   </style>
 </head>
 <body>
-  <div class="banner">
-  <img src="realistic Afrocentri.png" alt="Afrocentric banner featuring China’s essence">
-</div>
+   <div class="banner"></div>
   <div class="container">
     <div class="bio">
       <h1>It's China!</h1>
