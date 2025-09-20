@@ -107,7 +107,7 @@
         padding-right: 0;
       }
     }
-    .top-nav {
+   .top-nav {
   background-color: #fffaf3;
   border-bottom: 2px solid #f4a261;
   padding: 1rem;
@@ -120,14 +120,6 @@
   align-items: center;
   max-width: 1000px;
   margin: 0 auto;
-  position: relative;
-}
-
-.nav-brand a {
-  font-weight: 700;
-  font-size: 1.5rem;
-  color: #3b2f2f;
-  text-decoration: none;
 }
 
 .nav-links {
@@ -146,33 +138,40 @@
 
 .menu-toggle {
   display: none;
-  font-size: 1.8rem;
+  font-size: 1.5rem;
   background: none;
   border: none;
   color: #3b2f2f;
   cursor: pointer;
 }
 
+.dropdown {
+  display: none;
+  flex-direction: column;
+  list-style: none;
+  background-color: #fffaf3;
+  border: 1px solid #f4a261;
+  padding: 1rem;
+  position: absolute;
+  top: 70px;
+  right: 20px;
+  z-index: 1000;
+}
+
+.dropdown li a {
+  text-decoration: none;
+  color: #3b2f2f;
+  padding: 0.5rem 0;
+  display: block;
+}
+
 @media (max-width: 768px) {
   .nav-links {
     display: none;
-    flex-direction: column;
-    position: absolute;
-    top: 60px;
-    right: 0;
-    background-color: #fffaf3;
-    border: 1px solid #f4a261;
-    padding: 1rem;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-    z-index: 1000;
   }
 
   .menu-toggle {
     display: block;
-  }
-
-  .nav-links.show {
-    display: flex;
   }
 }
   </style>
@@ -183,8 +182,13 @@
 <nav class="top-nav" role="navigation" aria-label="Main navigation">
   <div class="nav-container">
     <ul class="nav-links">
-      
-    <!-- Toggle Button for Mobile -->
+      <li><a href="Home.html">Home</a></li>
+      <li><a href="projects.html">Projects</a></li>
+      <li><a href="writing.html">Creative Writing</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+
+    <!-- Mobile Menu Icon -->
     <button class="menu-toggle" onclick="toggleMenu()">☰</button>
 
     <!-- Dropdown Menu -->
