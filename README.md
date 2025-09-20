@@ -88,7 +88,7 @@
     .banner {
     width: 100%;
     height: 250px;
-    background-image: url('pray.png');
+    background-image: url('ancen.png');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
