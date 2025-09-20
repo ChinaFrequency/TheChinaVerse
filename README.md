@@ -87,7 +87,8 @@
     }
     .banner img {
   width: 100%;
-  height: auto;
+  max-height: 250px; /* Adjust height as needed */
+  object-fit: cover;
   display: block;
   border-bottom: 4px solid #e07a5f; /* Terracotta accent */
 }
