@@ -1,4 +1,3 @@
-<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
@@ -92,7 +91,7 @@
   <div class="container">
     <div class="bio">
       <h1>It's China!</h1>
-      <p class="tagline">Spiritual Baddie • Beauty Queen • Techie Witch • Learning Priestess • Pen-slingin’ Poet</p>
+      <p class="tagline">Spiritual Baddie • Beauty Queen • Techie Priestess • Learning Alchemist • Pen-slingin’ Poet</p>
 
       <div class="section">
         Welcome to my little corner of the cosmos—where ancestral magic meets motherboard logic, and every pixel glows with purpose. I’m your favorite <strong>voluptuous vibe dealer</strong>, serving up dream interpretations, tarot tea, and spiritual downloads with a wink and a whole lotta heart.
