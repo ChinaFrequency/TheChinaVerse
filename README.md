@@ -87,7 +87,7 @@
     }
     .banner {
     width: 100%;
-    height: 250px;
+    height: 270px;
     background-image: url('ancen.png');
     background-size: cover;
     background-position: center;
