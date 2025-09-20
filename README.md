@@ -110,6 +110,29 @@
   </style>
 </head>
 <body>
+  
+  <!-- Navigation -->
+<nav class="top-nav" role="navigation" aria-label="Main navigation">
+  <div class="nav-container">
+    <ul class="nav-links">
+      <li><a href="Home.html">Home</a></li>
+      <li><a href="projects.html">Projects</a></li>
+      <li><a href="writing.html">Creavtive Writing</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li class="menu-icon">
+        <button onclick="toggleMenu()">☰</button>
+        <ul class="dropdown" id="dropdownMenu">
+          <li><a href="Home.html">Home</a></li>
+          <li><a href="projects.html">Projects</a></li>
+         <li><a href="writing.html">Creavtive Writing</a></li>
+          <li><a href="contact.html">Contact</a></li>
+         
+        </ul>
+      </li>
+    </ul>
+  </div>
+</nav>
+
   <div class="banner"></div>
   <div class="container">
     <div class="bio">
