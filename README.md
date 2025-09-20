@@ -88,7 +88,7 @@
     .banner {
     width: 100%;
     height: 300px;
-    background-image: url('realistic Afrocentri.png');
+    background-image: url('pray.png');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
