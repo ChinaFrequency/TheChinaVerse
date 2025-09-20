@@ -88,7 +88,7 @@
 <body>
   <div class="container">
     <div class="bio">
-      <h1>💖 Hey love, I’m China! 💖</h1>
+      <h1> It's China! </h1>
       <p class="tagline">Spiritual Baddie • Beauty Queen • Techie Witch • Learning Alchemist • Pen-slingin’ Poet</p>
 
       <div class="section">
