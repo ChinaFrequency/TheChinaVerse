@@ -306,7 +306,7 @@
     </div>
 
 <!-- Image Section -->
-    <div class="bio-photo">
+     <div style="flex: 0 0 280px; text-align: center;">
       <img src="shareFromBeautyPlus (3).jpg" alt="Portrait of China in armchair with African masks">
     </div>
   </div>
