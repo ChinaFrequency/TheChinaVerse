@@ -196,6 +196,39 @@
     margin-left: 0.4rem; /* reduce spacing between tabs */
   }
 }
+.flex-bio {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.bio-text {
+  flex: 1 1 600px;
+  min-width: 300px;
+}
+
+.bio-photo {
+  flex: 0 0 280px;
+  text-align: center;
+}
+
+.bio-photo img {
+  max-width: 100%;
+  border-radius: 12px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+@media (max-width: 768px) {
+  .flex-bio {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .bio-photo {
+    margin-top: 2rem;
+  }
+}
   </style>
 </head>
 <body>
@@ -224,11 +257,11 @@
 
   <div class="banner"></div>
   <div class="container">
-    
-    <div style="display: flex; flex-wrap: wrap; justify-content: space-between; align-items: flex-start; padding: 3rem 2rem; max-width: 1200px; margin: auto; gap: 2rem;">
- 
-     <div style="flex: 1; min-width: 300px;">
-        <h1>China</h1>
+  <div class="flex-bio">
+    <!-- Text Section -->
+    <div class="bio-text">
+      <h1>China</h1>
+
         <p class="tagline"> • Spiritual Baddie • Techie Priestess • Learning Alchemist • Pen-slingin’ Storyteller </p>
       </div>
 
@@ -271,12 +304,15 @@
       </div>
     </div>
 
-     <div style="flex: 0 0 280px; text-align: center;">
+      <!-- Image Section -->
+    <div class="bio-photo">
       <img src="shareFromBeautyPlus (3).jpg" alt="Portrait of China in armchair with African masks">
     </div>
- 
-  
-   <hr style="border: none; border-top: 2px solid #D35400; margin: 3rem 0;">
+  </div>
+
+  <hr style="border: none; border-top: 2px solid #D35400; margin: 3rem 0;">
+</div>
+
 
 <footer style="text-align: center; padding: 2rem;">
 <img src="chinalogo.png" alt="China' logo" style="height: 70px;">
