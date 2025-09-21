@@ -197,6 +197,39 @@
     margin-left: 0.4rem; /* reduce spacing between tabs */
   }
 }
+    .flex-bio {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.bio-text {
+  flex: 1 1 600px;
+  min-width: 300px;
+}
+
+.bio-photo {
+  flex: 0 0 280px;
+  text-align: center;
+}
+
+.bio-photo img {
+  max-width: 100%;
+  border-radius: 12px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+    @media (max-width: 768px) {
+  .flex-bio {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .bio-photo {
+    margin-top: 2rem;
+  }
+}
   </style>
 </head>
 <body>
@@ -224,47 +257,19 @@
 </nav>
 
    <div class="banner"></div>
-  <div class="container">
-    
-    <div style="display: flex; flex-wrap: wrap; justify-content: space-between; align-items: flex-start; padding: 3rem 2rem; max-width: 1200px; margin: auto; gap: 2rem;">
- 
-     <div style="flex: 1; min-width: 300px;">
-        <h1>China</h1>
-        <p class="tagline"> • Spiritual Baddie • Techie Priestess • Learning Alchemist • Pen-slingin’ Storyteller </p>
-      </div>
+
+<div class="container">
+  <div class="flex-bio">
+    <!-- Text Section -->
+    <div class="bio-text">
+      <h1>China</h1>
+      <p class="tagline">• Spiritual Baddie • Techie Priestess • Learning Alchemist • Pen-slingin’ Storyteller</p>
 
       <div class="section">
-        I’ve been walking with spirit since before I could walk at all. Born and raised in Harlem, my gifts showed up early—visions, dreams, whispers from ancestors who never left my side. That sacred touch has guided me ever since.
+        I’ve been walking with spirit since before I could walk at all...
       </div>
 
-      <div class="section">
-        I hold space for transformation through dream interpretation, tarot, and ancestral downloads. My work is intuitive, intentional, and deeply rooted in sacred systems—not trends.
-      </div>
-
-      <div class="section">
-        I also build. Websites, learning modules, custom PCs—tools that empower. I design with clarity, care, and cultural pride, blending tech with spirit like it’s second nature.
-      </div>
-
-      <div class="section">
-        I write, too. Poetry that heals. Stories that remember. Words that wrap around you like a warm shawl. My creative work is raw, rhythmic, and rooted in truth.
-      </div>
-
-      <div class="section">
-        And yes, I still keep my hands in the beauty world—styling hair, painting nails, curating looks that feel like rituals of self-love. It’s not my main lane, but it’s part of my magic.
-      </div>
-
-      <div class="section">
-        <strong>Degrees? Got 'em:</strong>
-        <ul>
-          <li>Master’s in Learning, Design & Technology</li>
-          <li>Bachelor’s in Computer Science</li>
-          <li>Associate’s in Computer Information</li>
-        </ul>
-      </div>
-
-      <div class="section">
-        I offer custom websites, hand-built PCs, learning modules for any subject, resume glow-ups, tax clarity, spiritual guidance, and writing that moves—poems, stories, and narrative work that speak to the soul.
-      </div>
+      <!-- Add all your other sections here -->
 
       <div class="footer sparkle">
         I’m here to help you glow from the inside out—spiritually, creatively, and practically.  
@@ -272,11 +277,15 @@
       </div>
     </div>
 
-     <div style="flex: 0 0 280px; text-align: center;">
+    <!-- Image Section -->
+    <div class="bio-photo">
       <img src="shareFromBeautyPlus (3).jpg" alt="Portrait of China in armchair with African masks">
     </div>
+  </div>
+
+  <hr style="border: none; border-top: 2px solid #D35400; margin: 3rem 0;">
+</div>
   
-   <hr style="border: none; border-top: 2px solid #D35400; margin: 3rem 0;">
 
 <footer style="text-align: center; padding: 2rem;">
 <img src="chinalogo.png" alt="China logo" style="height: 70px;">
