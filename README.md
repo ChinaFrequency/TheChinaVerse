@@ -217,15 +217,11 @@ body {
 
       <p> I offer custom websites, hand-built PCs, learning modules for any subject, resume glow-ups, tax clarity, spiritual guidance, and writing that moves—poems, stories, and narrative work that speak to the soul.</p>
    
-      <div class="footer sparkle">
-        I’m here to help you glow from the inside out—spiritually, creatively, and practically.  
-        <br><strong>Whatever you need to elevate, I got you.</strong>
-      </div>
-    </div>
-
+      <p> I’m here to help you glow from the inside out—spiritually, creatively, and practically.<br><strong>Whatever you need to elevate, I got you.</strong> </p>
+   
 <!-- Image Section -->
-     <div style="flex: 0 0 300px; text-align: center;">
-      <img src="shareFromBeautyPlus (3).jpg" alt="Portrait of China in armchair with African masks">
+     <div style="flex: 0 0 280px; text-align: center;">
+      <img src="shareFromBeautyPlus (3).jpg" alt="Portrait of China in armchair with African masks" style="width: 100%; max-width: 280px; border-radius: 50%; box-shadow: 0 4px 12px rgba(0,0,0,0.2);">
     </div>
   </div>
 
