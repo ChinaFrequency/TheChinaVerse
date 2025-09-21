@@ -196,12 +196,12 @@
     margin-left: 0.4rem; /* reduce spacing between tabs */
   }
 }
-.flex-bio {
+.bio-flex {
   display: flex;
   flex-wrap: wrap;
-  gap: 2rem;
   justify-content: space-between;
   align-items: flex-start;
+  gap: 2rem;
 }
 
 .bio-text {
@@ -211,7 +211,7 @@
 
 .bio-photo {
   flex: 0 0 280px;
-  text-align: center;
+  text-align: right;
 }
 
 .bio-photo img {
@@ -220,12 +220,13 @@
   box-shadow: 0 0 10px rgba(0,0,0,0.1);
 }
 @media (max-width: 768px) {
-  .flex-bio {
+  .bio-flex {
     flex-direction: column;
     align-items: center;
   }
 
   .bio-photo {
+    text-align: center;
     margin-top: 2rem;
   }
 }
@@ -256,8 +257,8 @@
 </nav>
 
   <div class="banner"></div>
-  <div class="container">
-  <div class="flex-bio">
+ <div class="container">
+  <div class="bio-flex">
     <!-- Text Section -->
     <div class="bio-text">
       <h1>China</h1>
@@ -304,15 +305,13 @@
       </div>
     </div>
 
-      <!-- Image Section -->
+<!-- Image Section -->
     <div class="bio-photo">
       <img src="shareFromBeautyPlus (3).jpg" alt="Portrait of China in armchair with African masks">
     </div>
   </div>
 
   <hr style="border: none; border-top: 2px solid #D35400; margin: 3rem 0;">
-</div>
-
 
 <footer style="text-align: center; padding: 2rem;">
 <img src="chinalogo.png" alt="China' logo" style="height: 70px;">
