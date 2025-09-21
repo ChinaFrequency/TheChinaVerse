@@ -89,103 +89,112 @@
       background-repeat: no-repeat;
     }
 
-    .rtl-text {
-      direction: rtl;
-      font-family: 'Inter', sans-serif;
-      color: #3b2f2f;
-      padding: 1rem;
-      max-width: 700px;
-      margin: 0 auto;
-      text-align: center;
-    }
-
-    @media (max-width: 768px) {
-      .container {
-        flex-direction: column;
-      }
-
-      .bio {
-        padding-right: 0;
-      }
-    }
-   .top-nav {
-  background-color: #fffaf3;
-  border-bottom: 2px solid #f4a261;
-  padding: 1rem;
-  font-family: 'Inter', sans-serif;
-}
-
-.nav-container {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  max-width: 1000px;
-  margin: 0 auto;
-}
-
-.nav-links {
-  display: none;
-  flex-direction: column;
-  background-color: #fffaf3;
-  padding: 1rem;
-  position: absolute;
-  top: 60px;
-  right: 0;
-  border: 1px solid #f4a261;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-}
-
-.nav-links.show {
-  display: flex;
-}
-
-.menu-toggle {
-  display: none;
-  font-size: 1.5rem;
-  background: none;
-  border: none;
-  color: #3b2f2f;
-  cursor: pointer;
-}
-
-.dropdown {
-  display: none;
-  flex-direction: column;
-  list-style: none;
-  background-color: #fffaf3;
-  border: 1px solid #f4a261;
-  padding: 1rem;
-  position: absolute;
-  top: 70px;
-  right: 20px;
-  z-index: 1000;
-}
-
-.dropdown li a {
-  text-decoration: none;
-  color: #3b2f2f;
-  padding: 0.5rem 0;
-  display: block;
-}
-
-@media (max-width: 768px) {
-  .nav-links {
-    display: none;
+  .top-nav {
+    width: 100%;
+    background-color: #1a1a1a;
+    padding: 1rem 2rem;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
   }
 
-  .menu-toggle {
-    display: block;
-    font-size: 2rem;
+  .nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+  .brand {
+    color: #f5f5f5;
+    font-size: 1.5rem; /* 24px */
+    font-weight: 700;
+    letter-spacing: 0.5px;
+  }
+
+  .nav-links {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    align-items: center;
+  }
+
+  .nav-links li {
+    margin-left: 2rem;
+    position: relative;
+  }
+
+  .nav-links a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 1.125rem; /* 18px */
+    font-weight: 600;
+    transition: color 0.3s ease;
+  }
+
+  .nav-links a:hover,
+  .nav-links a:focus {
+    color: #00aaff;
+    text-decoration: underline;
+    outline: none;
+  }
+
+  .menu-icon {
+    list-style: none;
+  }
+
+  .menu-icon button {
     background: none;
     border: none;
-    color: #3b2f2f;
+    font-size: 1.5rem;
     cursor: pointer;
+    color: #ffffff;
   }
-}
 
-@media (min-width: 769px) {
-  .menu-toggle {
+  .dropdown {
     display: none;
+    position: absolute;
+    top: 2rem;
+    right: 0;
+    background-color: white;
+    border: 1px solid #ccc;
+    list-style: none;
+    padding: 0.5rem;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    z-index: 1001;
+  }
+  .dropdown.open {
+  display: block;
+ }
+  .dropdown li {
+    margin: 0.5rem 0;
+  }
+
+  .dropdown li a {
+    color: #333;
+    text-decoration: none;
+  }
+   
+  @media (max-width: 600px) {
+  iframe {
+    height: 300px;
+  }
+} 
+    @media (max-width: 600px) {
+  .nav-links a {
+    font-size: 0.85rem; /* ≈13.6px */
+  }
+
+  .dropdown li a {
+    font-size: 0.85rem;
+  }
+
+  .nav-links li {
+    margin-left: 0.4rem; /* reduce spacing between tabs */
   }
 }
   </style>
@@ -195,19 +204,21 @@
 <!-- Navigation -->
 <nav class="top-nav" role="navigation" aria-label="Main navigation">
   <div class="nav-container">
-    <div class="nav-brand">
-      <a href="Home.html">China</a>
-    </div>
-
-    <!-- Toggle Button -->
-    <button class="menu-toggle" onclick="toggleMenu()">☰</button>
-
-    <!-- Navigation Links -->
-    <ul class="nav-links" id="mainNav">
+   <ul class="nav-links">
       <li><a href="Home.html">Home</a></li>
       <li><a href="projects.html">Projects</a></li>
       <li><a href="writing.html">Creative Writing</a></li>
       <li><a href="contact.html">Contact</a></li>
+     <li class="menu-icon">
+        <button onclick="toggleMenu()" aria-label="Toggle menu">☰</button>
+        <ul class="dropdown" id="dropdownMenu">
+         <li><a href="Home.html">Home</a></li>
+         <li><a href="projects.html">Projects</a></li>
+         <li><a href="writing.html">Creative Writing</a></li>
+         <li><a href="contact.html">Contact</a></li>
+          
+       </ul>
+      </li>
     </ul>
   </div>
 </nav>
@@ -215,9 +226,8 @@
   <div class="banner"></div>
   <div class="container">
     <div class="bio">
-      <div class="rtl-text" dir="rtl">
         <h1>China</h1>
-        <p class="tagline"> Spiritual Baddie • Techie Priestess • Learning Alchemist • Pen-slingin’ Storyteller </p>
+        <p class="tagline"> • Spiritual Baddie • Techie Priestess • Learning Alchemist • Pen-slingin’ Storyteller </p>
       </div>
 
       <div class="section">
@@ -263,12 +273,29 @@
       <img src="shareFromBeautyPlus (3).jpg" alt="Portrait of China in armchair with African masks">
     </div>
   </div>
+  
+   <hr style="border: none; border-top: 2px solid #D35400; margin: 3rem 0;">
+</section>
+<footer style="text-align: center; padding: 2rem;">
+<img src="logo.png" alt="China logo" style="height: 70px;">
+<p style="font-size: 0.9rem; color: #777;">Made with sparkle and semantic HTML by China</p>
+  © 2025 China. All rights reserved.  
+  Content on this site may not be reproduced, distributed, or used without written permission.
+</footer>
 <script>
   function toggleMenu() {
-    const nav = document.getElementById('mainNav');
-    nav.classList.toggle('show');
+    const menu = document.getElementById("dropdownMenu");
+    menu.style.display = menu.style.display === "block" ? "none" : "block";
   }
-</script>
 
+  window.onclick = function(event) {
+    if (!event.target.matches('.menu-icon button')) {
+      const dropdown = document.getElementById("dropdownMenu");
+      if (dropdown && dropdown.style.display === "block") {
+        dropdown.style.display = "none";
+      }
+    }
+  };
+</script>
 </body>
 </html>
