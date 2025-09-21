@@ -276,7 +276,7 @@
    <hr style="border: none; border-top: 2px solid #D35400; margin: 3rem 0;">
 </section>
 <footer style="text-align: center; padding: 2rem;">
-<img src="logo.png" alt="China' logo" style="height: 70px;">
+<img src="chinalogo.png" alt="China' logo" style="height: 70px;">
 <p style="font-size: 0.9rem; color: #777;">Made with sparkle and semantic HTML by China</p>
   © 2025 China. All rights reserved.  
   Content on this site may not be reproduced, distributed, or used without written permission.
