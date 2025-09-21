@@ -224,7 +224,10 @@
 
   <div class="banner"></div>
   <div class="container">
-    <div class="bio">
+    
+    <div style="display: flex; flex-wrap: wrap; justify-content: space-between; align-items: flex-start; padding: 3rem 2rem; max-width: 1200px; margin: auto; gap: 2rem;">
+ 
+     <div style="flex: 1; min-width: 300px;">
         <h1>China</h1>
         <p class="tagline"> • Spiritual Baddie • Techie Priestess • Learning Alchemist • Pen-slingin’ Storyteller </p>
       </div>
@@ -268,7 +271,7 @@
       </div>
     </div>
 
-    <div class="photo">
+     <div style="flex: 0 0 280px; text-align: center;">
       <img src="shareFromBeautyPlus (3).jpg" alt="Portrait of China in armchair with African masks">
     </div>
  
