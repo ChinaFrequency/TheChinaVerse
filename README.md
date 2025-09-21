@@ -1,92 +1,57 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Homepage</title>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
   <style>
-    body {
-      margin: 0;
-      padding: 0;
-      font-family: 'Inter', sans-serif;
-      background: url('linen-texture.jpg') repeat, linear-gradient(to bottom right, #e07a5f, #f4a261);
-      background-blend-mode: overlay;
-      color: #3b2f2f;
-      line-height: 1.6;
-    }
+   html {
+  scroll-behavior: smooth;
+  font-size: 1.2rem; 
+}
+body {
+  background: linear-gradient(90deg, #FF6F61, #FFEC8B, #F9A602); 
+  color: #333;
+} 
+body {
+  padding-top: 80px;
+  font-size: 1.50rem; 
+  font-family: 'Segoe UI', 'Helvetica Neue', Arial, sans-serif;
+  line-height: 1.7;
+  color: #333;
+}
+  .sparkle-container {
+  position: relative;
+  overflow: hidden;
+}
 
-    .container {
-      display: flex;
-      flex-wrap: wrap;
-      max-width: 1000px;
-      margin: 3rem auto;
-      padding: 2rem;
-      background: #fffaf3;
-      border: 2px solid #f4a261;
-      border-radius: 12px;
-      box-shadow: 0 0 20px rgba(224, 122, 95, 0.2);
-    }
+.sparkle {
+  position: absolute;
+  width: 8px;
+  height: 8px;
+  background: radial-gradient(circle, #fff 0%, #f4a6b0 100%);
+  border-radius: 50%;
+  animation: floatSparkle 3s infinite ease-in-out;
+  opacity: 0.8;
+}
 
-    .bio {
-      flex: 1 1 500px;
-      padding-right: 2rem;
-    }
-
-    .bio h1 {
-      font-size: 2.5rem;
-      color: #6a4c93; /* Deep plum */
-      margin-bottom: 0.5rem;
-      text-align: center;
-    }
-
-    .tagline {
-      font-style: italic;
-      color: #2a9d8f; /* Jade green */
-      margin-bottom: 2rem;
-      text-align: center;
-    }
-
-    .section {
-      margin-bottom: 1.5rem;
-      text-align: justify;
-    }
-
-    .section strong {
-      color: #3b2f2f; /* Cocoa - no orange */
-    }
-
-    .footer {
-      font-weight: 600;
-      margin-top: 2rem;
-      color: #5a3d3d;
-      text-align: center;
-    }
-
-    .sparkle {
-      font-size: 1.2rem;
-      color: #2a9d8f; /* Jade green */
-    }
-
-    .photo {
-      flex: 1 1 400px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-    }
-
-    .photo img {
-      max-width: 100%;
-      border-radius: 12px;
-      box-shadow: 0 0 10px rgba(0,0,0,0.1);
-    }
-
-    .banner {
-      width: 100%;
-      height: 270px;
-      background-image: url('ancen.png');
-      background-size: cover;
-      background-position: center;
-      background-repeat: no-repeat;
-    }
+@keyframes floatSparkle {
+  0% {
+    transform: translateY(0) rotate(0deg);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(-100px) rotate(360deg);
+    opacity: 0;
+  }
+}  
+  .banner {
+    width: 100%;
+    height: 300px;
+    background-image: url('ancen.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
 
   .top-nav {
     width: 100%;
@@ -196,40 +161,7 @@
     margin-left: 0.4rem; /* reduce spacing between tabs */
   }
 }
-.bio-flex {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  align-items: flex-start;
-  gap: 2rem;
-}
-
-.bio-text {
-  flex: 1 1 600px;
-  min-width: 300px;
-}
-
-.bio-photo {
-  flex: 0 0 280px;
-  text-align: right;
-}
-
-.bio-photo img {
-  max-width: 100%;
-  border-radius: 12px;
-  box-shadow: 0 0 10px rgba(0,0,0,0.1);
-}
-@media (max-width: 768px) {
-  .bio-flex {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .bio-photo {
-    text-align: center;
-    margin-top: 2rem;
-  }
-}
+   
   </style>
 </head>
 <body>
@@ -258,35 +190,23 @@
 
   <div class="banner"></div>
  <div class="container">
-  <div class="bio-flex">
-    <!-- Text Section -->
-    <div class="bio-text">
-      <h1>China</h1>
+   <!-- Flex Layout for Bio + Photo -->
+   <div style="display: flex; flex-wrap: wrap; justify-content: space-between; align-items: flex-start; padding: 3rem 2rem; max-width: 1200px; margin: auto; gap: 2rem;">
+ 
+     <!-- Text Section -->
+     <div style="flex: 1; min-width: 300px;">
+     <h1 style="font-size: 2.5rem; color: #880E4F; margin-bottom: 1rem;">It's China </h1>
+      <div style="font-size: 1.25rem; line-height: 1.8; color: #1a1a1a;">
 
         <p class="tagline"> • Spiritual Baddie • Techie Priestess • Learning Alchemist • Pen-slingin’ Storyteller </p>
       </div>
 
-      <div class="section">
-        I’ve been walking with spirit since before I could walk at all. Born and raised in Harlem, my gifts showed up early—visions, dreams, whispers from ancestors who never left my side. That sacred touch has guided me ever since.
-      </div>
-
-      <div class="section">
-        I hold space for transformation through dream interpretation, tarot, and ancestral downloads. My work is intuitive, intentional, and deeply rooted in sacred systems—not trends.
-      </div>
-
-      <div class="section">
-        I also build. Websites, learning modules, custom PCs—tools that empower. I design with clarity, care, and cultural pride, blending tech with spirit like it’s second nature.
-      </div>
-
-      <div class="section">
-        I write, too. Poetry that heals. Stories that remember. Words that wrap around you like a warm shawl. My creative work is raw, rhythmic, and rooted in truth.
-      </div>
-
-      <div class="section">
-        And yes, I still keep my hands in the beauty world—styling hair, painting nails, curating looks that feel like rituals of self-love. It’s not my main lane, but it’s part of my magic.
-      </div>
-
-      <div class="section">
+    <p> I’ve been walking with spirit since before I could walk at all. Born and raised in Harlem, my gifts showed up early—visions, dreams, whispers from ancestors who never left my side. That sacred touch has guided me ever since. </p>
+    <p> I hold space for transformation through dream interpretation, tarot, and ancestral downloads. My work is intuitive, intentional, and deeply rooted in sacred systems—not trends. </p>
+    <p> I also build. Websites, learning modules, custom PCs—tools that empower. I design with clarity, care, and cultural pride, blending tech with spirit like it’s second nature. </p>
+    <p> I write, too. Poetry that heals. Stories that remember. Words that wrap around you like a warm shawl. My creative work is raw, rhythmic, and rooted in truth. </p>
+    <p> And yes, I still keep my hands in the beauty world—styling hair, painting nails, curating looks that feel like rituals of self-love. It’s not my main lane, but it’s part of my magic.</p>
+    
         <strong>Degrees? Got 'em:</strong>
         <ul>
           <li>Master’s in Learning, Design & Technology</li>
@@ -295,10 +215,8 @@
         </ul>
       </div>
 
-      <div class="section">
-        I offer custom websites, hand-built PCs, learning modules for any subject, resume glow-ups, tax clarity, spiritual guidance, and writing that moves—poems, stories, and narrative work that speak to the soul.
-      </div>
-
+      <p> I offer custom websites, hand-built PCs, learning modules for any subject, resume glow-ups, tax clarity, spiritual guidance, and writing that moves—poems, stories, and narrative work that speak to the soul.</p>
+   
       <div class="footer sparkle">
         I’m here to help you glow from the inside out—spiritually, creatively, and practically.  
         <br><strong>Whatever you need to elevate, I got you.</strong>
@@ -306,7 +224,7 @@
     </div>
 
 <!-- Image Section -->
-     <div style="flex: 0 0 280px; text-align: center;">
+     <div style="flex: 0 0 300px; text-align: center;">
       <img src="shareFromBeautyPlus (3).jpg" alt="Portrait of China in armchair with African masks">
     </div>
   </div>
