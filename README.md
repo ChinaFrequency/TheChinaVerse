@@ -271,10 +271,10 @@
     <div class="photo">
       <img src="shareFromBeautyPlus (3).jpg" alt="Portrait of China in armchair with African masks">
     </div>
-  </div>
+ 
   
    <hr style="border: none; border-top: 2px solid #D35400; margin: 3rem 0;">
-</section>
+
 <footer style="text-align: center; padding: 2rem;">
 <img src="chinalogo.png" alt="China' logo" style="height: 70px;">
 <p style="font-size: 0.9rem; color: #777;">Made with sparkle and semantic HTML by China</p>
